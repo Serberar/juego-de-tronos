@@ -1,4 +1,18 @@
 .home-div{
-    /* background-image: url(./img/sillahierro.jpg); */
-    height: 100vh;
+    background-image: url(../../public/img/tronoHierro.jpg);
+    height: 80vh;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+    color: white;
+    font-family: 'GameOfThrones';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 80px;
 }

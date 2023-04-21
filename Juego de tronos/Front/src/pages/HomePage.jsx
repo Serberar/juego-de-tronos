@@ -4,9 +4,7 @@ import '../css/Home.css';
 const HomePage = () => {
   return (
     <div className='home-div'>
-      <h1>GAME OF THRONES</h1>
-      <div className='footer-div'>
-      </div>
+      <h1>GAME <br />OF <br />THRONES</h1>
       </div>
   )
 } 
