@@ -1,5 +1,5 @@
 .home-div{
-    background-image: url(../../public/img/tronoHierro.jpg);
+    background-image: url(../../public/img/tronoHierro.png);
     height: 80vh;
     background-size: 70%;
     background-repeat: no-repeat;
@@ -16,3 +16,10 @@
 h1{
     font-size: 80px;
 }
+
+.banderas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+  }

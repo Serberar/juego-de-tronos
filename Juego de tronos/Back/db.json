@@ -10,7 +10,7 @@
         "alliances": ["House Stark", "House Targaryen"],
         "episodes": ["Winter Is Coming", "The Kingsroad", "Lord Snow", "Cripples, Bastards, and Broken Things"],
         "age": 23,
-        "image":"/images/characters/01.jpg",
+        "image":"/images/characters/01.webp",
         "houseImage":"/images/houses/Stark.webp"
       },
       {
@@ -23,7 +23,7 @@
         "alliances": ["House Targaryen", "Dothraki"],
         "episodes": ["Winter Is Coming", "The Kingsroad", "Lord Snow", "Cripples, Bastards, and Broken Things"],
         "age": 25,
-        "image":"/images/characters/02.jpeg",
+        "image":"/images/characters/02.webp",
         "houseImage":"/images/houses/Targaryen.webp"
       },
       {
@@ -49,7 +49,7 @@
         "alliances": ["House Stark"],
         "episodes": ["Winter Is Coming", "The Kingsroad", "Lord Snow", "Cripples, Bastards, and Broken Things"],
         "age": 20,
-        "image":"/images/characters/04.jpg",
+        "image":"/images/characters/04.webp",
         "houseImage":"/images/houses/Stark.webp"
       },
       {
@@ -88,7 +88,7 @@
         "alliances": ["House Lannister"],
         "episodes": ["The Wolf and the Lion", "A Golden Crown", "You Win or You Die", "The Pointy End"],
         "age": 40,
-        "image":"/images/characters/07.jpg",
+        "image":"/images/characters/07.webp",
         "houseImage":"/images/houses/Lannister.webp"
       },
       {
@@ -153,7 +153,7 @@
         "alliances": ["Free Folk", "House Stark"],
         "episodes": ["Hardhome", "The Door", "Battle of the Bastards", "The Dragon and the Wolf"],
         "age": 45,
-        "image":"/images/characters/12.jpg",
+        "image":"/images/characters/12.webp",
         "houseImage":"/images/houses/null.png"
       },
       {
@@ -179,7 +179,7 @@
         "alliances": ["House Targaryen"],
         "episodes": ["The Kingsroad", "A Golden Crown", "You Win or You Die", "The Pointy End"],
         "age": 52,
-        "image":"/images/characters/14.jpg",
+        "image":"/images/characters/14.webp",
         "houseImage":"/images/houses/Mormont.webp"
       },
       {
@@ -192,7 +192,7 @@
         "alliances": ["House Baratheon", "House Stark"],
         "episodes": ["The Spoils of War", "Eastwatch", "Beyond the Wall", "The Dragon and the Wolf"],
         "age": 34,
-        "image":"/images/characters/15.jpg",
+        "image":"/images/characters/15.webp",
         "houseImage":"/images/houses/Baratheon.webp"
       },
       {
@@ -205,7 +205,7 @@
         "alliances": ["House Stark", "House Baratheon"],
         "episodes": ["Blackwater", "The Lion and the Rose", "The Children", "The Iron Throne"],
         "age": 50,
-        "image":"/images/characters/16.jpg",
+        "image":"/images/characters/16.webp",
         "houseImage":"/images/houses/Seaworth.webp"
       },
       {
@@ -231,7 +231,7 @@
         "alliances": ["House Lannister", "House Tyrell"],
         "episodes": ["The Wolf and the Lion", "Blackwater", "The Laws of Gods and Men", "The Spoils of War"],
         "age": 40,
-        "image":"/images/characters/18.jpg",
+        "image":"/images/characters/18.webp",
         "houseImage":"/images/houses/null.png"
       },
       {
