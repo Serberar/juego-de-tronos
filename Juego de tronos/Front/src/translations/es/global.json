@@ -1,0 +1,39 @@
+{
+    "home": {
+        "title": "JUEGO DE TRONOS"
+},
+    
+    "nav": {
+        "home": "Inicio",
+        "characters": "Personajes",
+        "houses": "Casas",
+        "chronology": "Cronologia"
+    },
+
+    "input":{
+        "text": "Busqueda por nombre"
+    },
+
+    "characters":{
+        "house": "Casa",
+        "parents": "Padres",
+        "relatives": "Familiares",
+        "titles": "Tilulos",
+        "alliances": "Alianzas",
+        "episodes": "Episodios",
+        "age": "Edad"
+    },    
+
+    "houses":{
+        "settlement": "Asentamiento",
+        "region": "Región",
+        "alliances": "Alianzas",
+        "religions": "Religiones",
+        "foundation": "Fundación"
+    },
+
+    "button":{
+        "close": "cerrar",
+        "order": "COLOCAR EN ORDEN CRONOLOGICO"
+    }
+}

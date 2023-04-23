@@ -2,6 +2,7 @@
   background-color: black;
   padding: 30px;
   margin-bottom: 50px;
+  margin-top: 25px;
 }
 
 .container {
@@ -49,3 +50,37 @@
     right: 0;
     margin: 20px;
   }
+
+  .idioma{
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .inicioimg{
+    width: auto;
+    height: 25px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .order{
+    font-size: 20px;
+    font-family: 'GameOfThrones';
+    color: white;
+    width: 300px;
+  }
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6b6b6b;
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #252525;
+  border-radius: 10px;
+}

@@ -23,3 +23,8 @@ h1{
     right: 0;
     margin: 20px;
   }
+
+  .idioma{
+    border-radius: 5px;
+    cursor: pointer;
+  }

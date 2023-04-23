@@ -2,9 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { getCharacters, getApiEndpoint } from '../shared/Api';
 import '../css/PersonajesPage.css';
 import ReactModal from 'react-modal';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 
 const PersonajesPage = () => {
+  const [t, i18n] = useTranslation("global");
+
   const [personajes, setPersonajes] = useState([]);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedPersonaje, setSelectedPersonaje] = useState(null);
@@ -39,12 +43,14 @@ const PersonajesPage = () => {
   return (
     <div className='personajes'>
       <div className='buscador'>
-        <input className="byname" type='text' placeholder='Search by name' value={searchTerm}
+        <input className="byname" type='text' placeholder={t('input.text')} value={searchTerm}
           onChange={handleSearchChange}
         />
-        <div className='banderas'>
-        <img className='idioma' src="./img/ingles.jpg" alt='English'/>
-        <img className='idioma' src="./img/castellano.svg" alt='Español'/>
+      <div className='banderas'>
+        <Link to= "/"> <img className='inicioimg' src='./img/home.png' alt="home"/>
+        </Link>
+        <img className='idioma' src="./img/ingles.webp" alt='English' onClick={()=>i18n.changeLanguage("en")} />
+        <img className='idioma' src="./img/castellano.webp" alt='Español' onClick={()=>i18n.changeLanguage("es")} />
         </div>
       </div>
       <div className="cards-container">
@@ -63,36 +69,36 @@ const PersonajesPage = () => {
             <h2>{selectedPersonaje.name}</h2>
             <div className='card-container'>
               <div className='card'>
-                <div className='titleCard'>House:</div>
+                <div className='titleCard'>{t('characters.house')}</div>
                 <div className='contentCard'><img className="houseImg" src={`${getApiEndpoint}${selectedPersonaje.houseImage}`} alt={selectedPersonaje.houseImage} /></div>
               </div>
               <div className='card'>
-                <div className='titleCard'>Parents:</div>
+                <div className='titleCard'>{t('characters.parents')}</div>
                 <div className='contentCard'>{selectedPersonaje.parents.join(', ')}</div>
               </div>
               <div className='card'>
-                <div className='titleCard'>Siblings:</div>
+                <div className='titleCard'>{t('characters.relatives')}</div>
                 <div className='contentCard'>{selectedPersonaje.siblings.join(', ')}</div>
               </div>
               <div className='card'>
-                <div className='titleCard'>Titles:</div>
+                <div className='titleCard'>{t('characters.titles')}</div>
                 <div className='contentCard'>{selectedPersonaje.titles.join(', ')}</div>
               </div>
               <div className='card'>
-                <div className='titleCard'>Alliances:</div>
+                <div className='titleCard'>{t('characters.alliances')}</div>
                 <div className='contentCard'>{selectedPersonaje.alliances.join(', ')}</div>
               </div>
               <div className='card'>
-                <div className='titleCard'>Episodes:</div>
+                <div className='titleCard'>{t('characters.episodes')}</div>
                 <div className='contentCard'>{selectedPersonaje.episodes.join(', ')}</div>
               </div>
               <div className='card'>
-                <div className='titleCard'>Age:</div>
+                <div className='titleCard'>{t('characters.age')}</div>
                 <div className='contentCard'>{selectedPersonaje.age}</div>
               </div>
             </div>
 
-            <button onClick={closeModal}>Close</button>
+            <button onClick={closeModal}>{t('button.close')}</button>
           </ReactModal>
         )}
         <div className="footer-div">

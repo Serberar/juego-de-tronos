@@ -123,6 +123,16 @@ h2 {
   width: auto;
   height: 25px;
   margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inicioimg{
+  width: auto;
+  height: 25px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .byname{

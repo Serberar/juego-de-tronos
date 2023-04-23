@@ -1,27 +1,29 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../css/Enlaces.css'
+import { useTranslation } from 'react-i18next';
 
 
 const Enlaces = () => {
+  const [t] = useTranslation("global");
     return (
       <div className='nav-div'>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/personajes">Characters</Link>
-            </li>
-            <li>
-              <Link to="/casas">Houses</Link>
-            </li>
-            <li>
-              <Link to="/cronologia">Chronology</Link>
-            </li>
-          </ul>
-        </nav>
+<nav>
+    <ul>
+      <li>
+        <NavLink exact to="/" activeClassName="active"></NavLink>
+      </li>
+      <li>
+        <NavLink to="/personajes" activeClassName="active">{t('nav.characters')}</NavLink>
+      </li>
+      <li>
+        <NavLink to="/casas" activeClassName="active">{t('nav.houses')}</NavLink>
+      </li>
+      <li>
+        <NavLink to="/cronologia" activeClassName="active">{t('nav.chronology')}</NavLink>
+      </li>
+    </ul>
+  </nav>
         </div>
       );
     }

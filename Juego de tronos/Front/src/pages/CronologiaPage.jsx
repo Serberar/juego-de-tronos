@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { getCharacters, getApiEndpoint } from '../shared/Api';
 import '../css/Crono.css'
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const CronologiaPage = () => {
+  const [t, i18n] = useTranslation("global");
+
   const [personajes, setPersonajes] = useState([]);
   const [filteredPersonajes, setFilteredPersonajes] = useState([]);
   const [ordenAscendente, setOrdenAscendente] = useState(true);
@@ -27,12 +31,14 @@ const CronologiaPage = () => {
 
   return (
     <div className='cronologia-div'>
-        <div className='banderas'>
-        <img className='idioma' src="./img/ingles.jpg" alt='English'/>
-        <img className='idioma' src="./img/castellano.svg" alt='Español'/>
+      <div className='banderas'>
+        <Link to= "/"> <img className='inicioimg' src='./img/home.png' alt="home"/>
+        </Link>
+        <img className='idioma' src="./img/ingles.webp" alt='English' onClick={()=>i18n.changeLanguage("en")} />
+        <img className='idioma' src="./img/castellano.webp" alt='Español' onClick={()=>i18n.changeLanguage("es")} />
         </div>
       <div className="container">
-        <button onClick={ordenarPersonajes}>CHRONOLOGICAL ORDER</button>
+        <button className='order' onClick={ordenarPersonajes}>{t('button.order')}</button>
         {filteredPersonajes.map((personaje) => (
           <div className="personaje" key={personaje.id}>
             <div className="image">

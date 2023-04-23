@@ -1,0 +1,39 @@
+{
+    "home": {
+        "title": "GAME OF THRONES"
+    },
+    
+    "nav": {
+        "home": "Home",
+        "characters": "Characters",
+        "houses": "Houses",
+        "chronology": "Chronology"
+    },
+
+    "input":{
+        "text": "Search by name"
+    },
+
+    "characters":{
+        "house": "House",
+        "parents": "Parents",
+        "relatives": "Relatives",
+        "titles": "Titles",
+        "alliances": "Alliances",
+        "episodes": "Episodes",
+        "age": "Age"
+    }, 
+
+    "houses":{
+        "settlement": "Settlement",
+        "region": "Region",
+        "alliances": "Alliances",
+        "religions": "Religions",
+        "foundation": "Foundation"
+    },
+
+    "button":{
+        "close": "Close",
+        "order": "PUT IN CHRONOLOGICAL ORDER"
+    }
+}
